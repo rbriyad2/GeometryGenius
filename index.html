@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Genius</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- --------Navbar section--------- -->
+  <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="container mx-auto flex flex-wrap items-center justify-between p-4">
+      <a href="index.html" class="flex items-center">
+        <img src="images/logo.png" class="h-8 mr-3" alt="Flowbite Logo">
+      </a>
+      <div class="flex md:order-2">
+        <button type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a
+            href="https://rbriyad2.github.io/my-portfolio/">Hire Me</a></button>
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="https://rbriyad2.github.io/shopping-cart-js/" target="_blank"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Cart</a>
+          </li>
+          <li>
+            <a href="https://rbriyad2.github.io/Pin-Matching/" target="_blank"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pin
+              generator</a>
+          </li>
+          <li>
+            <a href="https://rbriyad2.github.io/functional-bank/" target="_blank"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Bank</a>
+          </li>
+          <li>
+            <a href="https://rbriyad2.github.io/expense-saving-calculator/" target="_blank"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Expence
+              Calculator</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ----Header section---- -->
+  <section class="container mx-auto mt-20">
+    <div class="bg-sky-200 flex justify-between content-center  py-5">
+      <div class="ml-10">
+        <h1 class="text-4xl	font-bold	">Interactive</h1>
+        <h3 class="font-medium text-xl	text-slate-500	">Geometry Genius</h3>
+      </div>
+      <button id="blogBtn"
+        class="mr-10 rounded-lg bg-sky-600 text-white text-sm	text-xl border-none leading-7	w-28 h-12	mt-3">Blog</button>
+    </div>
+  </section>
+
+  <!-- ------- all columns section------- -->
+
+  <section class="container mx-auto allshape">
+    <div class="grid 2xl:grid-cols-4 gap-4 py-10 sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3">
+      <div id="tringlebg"  class="polygoan border-solid border-slate-500 border p-10 mx-auto"> 
+        <img class="w-10/12 mx-auto" src="images/triangle.png" alt="">
+        <h2 class="text-center mt-5 text-2xl	font-bold	">Triangle</h2>
+        <h5 class="text-center">Area (A)= 0.5 &#10005; b &#10005; h</h5>
+        <div class="text-center flex mt-2">
+          <input id="triangleinPutBvalue" class="w-24 h-8 rounded px-2 bg-gray-300	" type="text" placeholder="b">
+          <h5 class="mx-2"> cm </h5> 
+             <input id="triangleinPutHvalue" class="w-24 h-8 round px-2 bg-gray-300	" type="text" placeholder="h">
+          <h5 class="ml-2">cm</h5>
+        </div>
+        <button id="triangle" class="bg-sky-600 py-4 w-11/12 rounded-lg ml-2.5 mt-5 text-white font-bold	text-xl	">Calculate</button>
+      </div>
+
+      <div id="rectanglebg" class=" border-solid border-slate-500 border p-10 mx-auto"> 
+        <img class="w-12/12 mx-auto" src="images/rectangle.png" alt="">
+        <h2 class="text-center mt-5 text-2xl	font-bold	">Rectangle</h2>
+        <h5 class="text-center">Area (A)= W &#10005; I</h5>
+        <div class="text-center flex mt-2">
+          <input id="rectangleW" class="w-24 h-8 rounded px-2 bg-gray-300	" type="text" placeholder="W">
+          <h5 class="mx-2"> cm </h5> 
+             <input id="rectangleI" class="w-24 h-8 round px-2 bg-gray-300	" type="text" placeholder="I">
+          <h5 class="ml-2">cm</h5>
+        </div>
+        <button id="rectangleCalculateBtn" class="bg-sky-600 py-4 w-11/12 rounded-lg ml-2.5 mt-5 text-white font-bold	text-xl	">Calculate</button>
+      </div>
+
+      <div id="parallelogrambg" class=" border-solid border-slate-500 border p-10 mx-auto"> 
+        <img class="w-12/12 mx-auto" src="images/parallelogram.png" alt="">
+        <h2 class="text-center mt-5 text-2xl	font-bold	">Parallelogram</h2>
+        <h5 class="text-center">Area (A)= b &#10005; h</h5>
+        <div class="text-center flex mt-2">
+          <input id="parallelogramB" class="w-24 h-8 rounded px-2 bg-gray-300	" type="text" placeholder="b">
+          <h5 class="mx-2"> cm </h5> 
+             <input id="parallelogramH" class="w-24 h-8 round px-2 bg-gray-300	" type="text" placeholder="h">
+          <h5 class="ml-2">cm</h5>
+        </div>
+        <button id="CalculateParallelogram" class="bg-sky-600 py-4 w-11/12 rounded-lg ml-2.5 mt-5 text-white font-bold	text-xl	">Calculate</button>
+      </div>
+
+
+      
+<div class="text-center border-solid border-slate-300 border">
+<h2 class="text-xl font-bold	my-6  decoration-1	
+ underline-offset-4 underline">Area Calculation</h2>
+
+
+
+ <h3 id="triangles" class="hidden my-2">
+  <span id="serial"></span>
+  Triangle 
+  <span id="rightTringle">00</span>
+  <span>cm<sup>2</sup></span> 
+  <button class="bg-sky-600 py-2 px-2 rounded-lg ml-5 text-white font-light	text-sm	">convert to m <sup>2</sup></button>
+</h3>
+
+ <h3 id="Rectangles" class="rec hidden my-2"><span id="serial"></span>Rectangle <span id="rectangle">00</span><span>cm<sup>2</sup></span> <button class="bg-sky-600 py-2 px-2 rounded-lg ml-5 text-white font-light		text-sm	">convert to m <sup>2</sup></button></h3>
+
+
+ <h3 id="Parallelogram" class="rec hidden my-2"><span id="serial"></span>Parallelogram <span id="parallelograms">00</span><span>cm<sup>2</sup></span> <button class="bg-sky-600 py-2 px-2 rounded-lg ml-5 text-white font-light		text-sm	">convert to m <sup>2</sup></button></h3>
+
+
+ <h3 id="pentagon" class="rec hidden my-2"><span id="serial"></span>pentagon <span id="pentagons">00</span><span>cm<sup>2</sup></span> <button class="bg-sky-600 py-2 px-2 rounded-lg ml-5 text-white font-light		text-sm	">convert to m <sup>2</sup></button></h3>
+
+
+ <h3 id="rombush" class="rec hidden my-2"><span id="serial"></span>Rhombus <span id="rombushoo">00</span><span>cm<sup>2</sup></span> <button class="bg-sky-600 py-2 px-2 rounded-lg ml-5 text-white font-light		text-sm	">convert to m <sup>2</sup></button></h3>
+
+
+ <h3 id="ellipse" class="rec hidden my-2"><span id="serial"></span>ellipse <span id="ellipses">00</span><span>cm<sup>2</sup></span> <button class="bg-sky-600 py-2 px-2 rounded-lg ml-5 text-white font-light		text-sm	">convert to m <sup>2</sup></button></h3>
+
+</div>
+<div id="Rhombusbg" class=" border-solid border-slate-500 border p-10 mx-auto"> 
+  <img class="w-12/12 mx-auto" src="images/rhombus.png" alt="">
+  <h2 class="text-center mt-5 text-2xl	font-bold	">Rhombus</h2>
+  <h5 class="text-center">Area (A)= 0.5 &#10005; D <sub>1</sub> &#10005; D <sub>2</sub> </h5>
+  <div class="text-center flex mt-2">
+    <input id="d1" class="w-24 h-8 rounded px-2 bg-gray-300	" type="text" placeholder="b">
+    <h5 class="mx-2"> cm </h5> 
+       <input id="d2" class="w-24 h-8 round px-2 bg-gray-300	" type="text" placeholder="h">
+    <h5 class="ml-2">cm</h5>
+  </div>
+  <button id="Rhombusid" class="bg-sky-600 py-4 w-11/12 rounded-lg ml-2.5 mt-5 text-white font-bold	text-xl	">Calculate </button>
+</div>
+<div id="pentagonbg" class=" border-solid border-slate-500 border p-10 mx-auto"> 
+  <img class="w-12/12 mx-auto" src="images/pentagon.png" alt="">
+  <h2 class="text-center mt-5 text-2xl	font-bold	">Pentagon</h2>
+  <h5 class="text-center">Area (A)= 0.5 &#10005; p &#10005;	b</h5>
+  <div class="text-center flex mt-2">
+    <input id="pentagonP" class="w-24 h-8 rounded px-2 bg-gray-300	" type="text" placeholder="b">
+    <h5 class="mx-2"> cm </h5> 
+       <input id="pentagonB" class="w-24 h-8 round px-2 bg-gray-300	" type="text" placeholder="h">
+    <h5 class="ml-2">cm</h5>
+  </div>
+  <button id="calculatePentagon" class="bg-sky-600 py-4 w-11/12 rounded-lg ml-2.5 mt-5 text-white font-bold	text-xl	">Calculate</button>
+</div>
+<div id="ellipsebg" class=" border-solid border-slate-500 border p-10 mx-auto"> 
+  <img class="w-12/12 mx-auto" src="images/ellipse.png" alt="">
+  <h2 class="text-center mt-5 text-2xl	font-bold	">Ellipse</h2>
+  <h5 class="text-center">Area (A)= <span>&pi;</span>ab</h5>
+  <div class="text-center flex mt-2">
+    <input id="ellipseA" class="w-24 h-8 rounded px-2 bg-gray-300	" type="text" placeholder="b">
+    <h5 class="mx-2"> cm </h5> 
+       <input id="ellipseB" class="w-24 h-8 round px-2 bg-gray-300	" type="text" placeholder="h">
+    <h5 class="ml-2">cm</h5>
+  </div>
+  <button id="Calculateellipse" class="bg-sky-600 py-4 w-11/12 rounded-lg ml-2.5 mt-5 text-white font-bold	text-xl	">Calculate</button>
+</div>
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
